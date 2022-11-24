@@ -3,7 +3,7 @@ const jsonServer = require('json-server')
 const clone = require('clone')
 const data = require('./db.json')
 const server = jsonServer.create()
-const router = jsonServer.router('db.json')
+const router = jsonServer.router('db.json', { _isFake: true })
 const middlewares = jsonServer.defaults()
 
 server.use(middlewares)
