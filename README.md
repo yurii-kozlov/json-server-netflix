@@ -16,13 +16,19 @@ nvm use
 yarn install
 ```
 
-- Start the server:
+- Start the server in development environment:
+
+```
+yarn run dev
+```
+
+- Goto [http://localhost:8000/](http://localhost:8000/) to verify if the server is working.
+
+- Start the server in production environment (Database State remains unaffected):
 
 ```
 yarn start
 ```
-
-- Goto [http://localhost:8000/](http://localhost:8000/) to verify if the server is working.
 
 - By default the server runs on port 8000. You can add the port in your environment variable as well.
 
